@@ -4,7 +4,7 @@ import { Entity, Generated, PrimaryColumn } from "typeorm";
 export class MyEntity {
   @PrimaryColumn('uuid', {
     // COMMENT THIS LINE TO MAKE IT WORK
-    // default: () => '(uuid())',
+    default: () => '(uuid())',
   })
   @Generated('uuid')
   id: string
